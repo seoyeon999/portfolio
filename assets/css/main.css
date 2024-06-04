@@ -3442,7 +3442,7 @@ button:disabled,
   }
 
   #sidebar .toggle:before {
-    color: #7f888f;
+    color: #bbfb4c;
     margin-left: -0.0625em;
     margin-top: -0.25em;
     font-size: 1.1rem;
@@ -3450,7 +3450,8 @@ button:disabled,
   }
 
   #sidebar .toggle:after {
-    background: rgba(186, 214, 235, 0.75);
+    background: rgba(255, 255, 255, 0.75);
+    /*모바일 사이드 토글*/
     border-radius: 0.375em;
     content: '';
     height: 3.5em;
