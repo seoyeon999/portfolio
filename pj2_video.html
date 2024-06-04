@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allegro Video</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/pj2_favicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #191919;
+        }
+
+        #wrapper {
+            width: 1280px;
+            margin: 50px auto;
+
+        }
+
+        #wrapper p {
+            font-family: 'Belgro';
+            color: #fff;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #wrapper video {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            width: 40px;
+        }
+
+        #top {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        #top img {
+            width: 100%;
+            display: block;
+        }
+
+        @media (max-width:1320px) {
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <p>PC, TABLET VER.</p>
+        <div class="video">
+            <video src="./images/banner_pc.mp4" controls loop playsinline></video>
+        </div><!--video-->
+        <br>
+        <p>MOBILE VER.</p>
+        <div class="video">
+            <video src="./images/banner_mobile169.mp4" controls loop playsinline></video>
+        </div><!--video-->
+    </div>
+    <div class="fixed_box">
+        <a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+            <img src="images/top.png" alt="top">
+        </a>
+    </div>
+</body>
+
+</html>
